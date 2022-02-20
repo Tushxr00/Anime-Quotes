@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root {
+    --first-font: 'Josefin Sans', sans-serif;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--first-font);
+    background-color: #c4bfbf;
+}
+
+
+/* 
+----------------------------------------------------
+Heading
+----------------------------------------------------
+*/
+
+h1 {
+    padding-top: 5rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    font-size: 3rem;
+    text-shadow: 8px 8px 10px black;
+}
+
+
+/* 
+------------------------------------------------------
+Display card
+------------------------------------------------------
+*/
+
+main {
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgb(244, 250, 250);
+    padding: 2rem 4rem 2rem 4rem;
+    border-radius: 3rem;
+    box-shadow: 1em 0 1em #808080, 0 -1em 1em grey, -1em 0 1em grey, 0 1em 1em grey;
+    min-height: 32rem;
+    max-width: 40rem;
+    margin-bottom: 10%;
+}
+
+
+/* 
+-----------------------------------------------
+image layout
+-----------------------------------------------
+*/
+
+img {
+    object-position: 50% 50%;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    margin-left: 25%;
+    box-shadow: 1em 0 1em #808080, 0 -1em 1em grey, -1em 0 1em grey, 0 1em 1em grey;
+}
+
+
+/* 
+---------------------------------------------------
+Name layout-Charecter name
+---------------------------------------------------
+*/
+
+h2 {
+    padding-top: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+
+/* 
+---------------------------------------------------
+Name layout-Show name
+---------------------------------------------------
+*/
+
+h4 {
+    color: rgb(10, 10, 10);
+    text-transform: capitalize;
+    text-align: center;
+    opacity: 0.8;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+}
+
+
+/* 
+---------------------------------------------------
+Name layout-Quote area
+---------------------------------------------------
+*/
+
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+    width: 32rem;
+    height: 6rem;
+}
+
+
+/* 
+---------------------------------------------------
+buttons
+---------------------------------------------------
+*/
+
+.btn-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto;
+}
+
+.btn {
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    color: aqua;
+}
+
+.btn-random {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.btn-left {
+    text-align: end;
+    margin-right: 0.3rem;
+}
+
+.btn-right {
+    margin-left: 0.3rem;
+    text-align: start;
+}
+
+@media only screen and (max-width:650px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .container {
+        width: 25rem;
+    }
+    img {
+        height: 8rem;
+        width: 8rem;
+        margin-left: 25%;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin: 0.3rem;
+    }
+    p {
+        font-size: 0.7 rem;
+        width: 17rem;
+        margin-bottom: 6rem;
+    }
+}
+
+@media only screen and (max-width:410px) {
+    h1 {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+    .container {
+        width: 18rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    img {
+        height: 8rem;
+        width: 8rem;
+        margin-left: 15%;
+    }
+    h2 {
+        font-size: 1.3rem;
+        margin: 0.3rem;
+    }
+    p {
+        font-size: 0.7 rem;
+        width: 12rem;
+        height: 8rem;
+        margin-bottom: 6rem;
+    }
+}
